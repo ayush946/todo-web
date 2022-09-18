@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+   background-color: hsl(235, 21%, 11%);
+   position:relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+input[type = text]{
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+ul{
+  text-align: center;
+  list-style-position: inside;
+}
+li{
+  background: hsl(235, 24%, 19%);
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  word-wrap: break-word;
+}
+li:hover{
+  border-style: solid;
+  border-color: hsl(234, 11%, 52%);
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+.background-img{
+
+}
+
+
+
+div.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.div-sun-img{
+  display: flex;
+  justify-content:center;
+}
+.div-heading{
+  display: flex;
+  justify-content: center;
+}
+.li-img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.sun-img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header{
+  display: flex;
+  align-items: center;
+}
+.heading-text{
+  justify-content: flex-start;
+  color: white;
+}
+
+.tick {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.05rem solid hsl(234, 11%, 52%);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 1rem;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+.done span{
+  text-decoration: line-through;
+}
+
+.todo-list{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.js-form{
+  text-align: center;
+}
+.todo-list{
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+
+.todo-item {
+  display: flex;
+}
+
+.todo-checker {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-name {
+  flex: 5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.todo-deleter {
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+}
